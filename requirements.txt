@@ -1,0 +1,13 @@
+faiss_cpu==1.11.0
+flet==0.27.6
+flet-desktop==0.27.6
+pymongo==4.11.3
+python-dotenv==1.1.0
+Requests==2.32.4
+torch==2.7.0
+transformers==4.52.3
+sec-api==1.0.32
+openai==2.3.0
+sentence-transformers==5.1.1
+faiss-cpu==1.11.0
+tqdm==4.67.1
