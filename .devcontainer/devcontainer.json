@@ -1,0 +1,27 @@
+// Read documentation or readme.md about how to run the devcontainer.
+
+{
+  "name": "Finalytics",
+  "dockerComposeFile": ["../.docker/docker-compose.yml"],
+  "service": "view", 
+  "workspaceFolder": "/app",
+  "remoteUser": "root",
+  "customizations": {
+      "vscode": {
+          "extensions": [
+              "formulahendry.code-runner",
+              "ms-python.python",
+              "ms-python.debugpy",
+              "ms-python.vscode-pylance",
+              "ms-vscode-remote.remote-wsl"
+          ],
+          "settings": {
+            "code-runner.runInTerminal": true
+          }
+    }
+  },
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh/id_rsa,target=/home/vscode/.ssh/id_rsa,type=bind,consistency=cached"
+  ]
+}

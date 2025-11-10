@@ -1,0 +1,11 @@
+
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+.ipynb_checkpoints/
+
+**/test.py
+**/tempCodeRunnerFile*.py
+company_json/
