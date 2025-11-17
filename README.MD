@@ -1,5 +1,8 @@
 # Finalytics
 
+[![EN](https://img.shields.io/badge/EN-English-blue?style=for-the-badge)](https://github.com/SamanthaSaavedra/Finalytics-Automated-Stock-Fundamental-Analysis-System/blob/main/README.MD)
+[![ES](https://img.shields.io/badge/ES-Español-red?style=for-the-badge)](https://github.com/SamanthaSaavedra/Finalytics-Automated-Stock-Fundamental-Analysis-System/blob/main/README.ES.MD)
+
 <p align="justify">    
 Nowadays the <b>amount of knowledge and inference needed to understand investment has drastically increased</b>, when dealing with options to address heritage management the <b>stock market</b> could be one of multiple options to rely on, however the knowledge frontier is high and the amount of time unreachable.
 </p>
