@@ -16,6 +16,8 @@ Integrates <b>Model Controller View software architecture (MCV) with Docker</b> 
 Each container has <b>QoS policies</b> in which Docker Compose tries within a certain time (less than 60 seconds) a health query to check if the container is up. When the number of tries runs out, the Process ID (PID) is taken down and Docker itself redeploys the container again.
 </p>
 
+https://github.com/user-attachments/assets/62b2f332-8657-4506-8f25-375e03962ee0
+
 ## Software Architecture (MCV)
 
 <p align="justify">   
