@@ -45,6 +45,10 @@ Using the MCV architecture the containers were divided in the next approach:
 
 ## Workflow
 
+<p align="justify">  
+Finalytics works in the following steps:
+</p>
+
 - $${\color{orange} 1.-}$$ Queries and extracts the information from SEC-API (Section 7 of 10-K) Alpha Vantage.
 - $${\color{orange} 2.-}$$ Information is allocated in cache memory to avoid more query usage at a local MongoDB database.
 - $${\color{orange} 3.-}$$ Feature extraction is done and then sent to Retrieval-Augmented Generation Deepseek with an automatic prompt to give the best answer without compromising efficiency.
@@ -53,6 +57,10 @@ Using the MCV architecture the containers were divided in the next approach:
   - $${\color{lightskyblue} 3.3.-}$$ The response is given by the closest numbers that match with the FAISS.
 - $${\color{orange} 4.-}$$ The containers communicate with each other to bring their information and finally display it at the entrypoint container view.
   - $${\color{lightskyblue} 4.1.-}$$ Containers every 60 seconds as a second process will do a health check using their loopback address (127.0.0.1 for IPv4, ::1 for IPv6) to try to ping themselves several times; if it is not possible, it takes down the process ID (PID) 1 and Docker Compose redeploys the container, notifying their health state.
+
+## Video
+
+https://github.com/user-attachments/assets/39b92c00-cb9d-4605-be71-17f56c594d09
 
 > [!CAUTION]
 > The current version does not include the API Keys to make the query to the local and SEC-api database.
