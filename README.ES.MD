@@ -19,7 +19,7 @@ Integra una <b>arquitectura de software Modelo Controlador Vista (MCV) con Docke
 Cada contenedor posee <b>políticas de QoS</b> donde Docker Compose intenta, dentro de un tiempo determinado (menos de 60 segundos), realizar una consulta de salud para verificar que el contenedor esté activo. Cuando se agotan los intentos, se derriba el Process ID (PID) y Docker vuelve a desplegar el contenedor.
 </p>
 
-https://github.com/user-attachments/assets/62b2f332-8657-4506-8f25-375e03962ee0
+https://github.com/user-attachments/assets/8e5069a7-8af9-40ab-8a22-db10eb866769
 
 ## Arquitectura Software (MCV)
 
