@@ -2,6 +2,10 @@
 
 [![EN](https://img.shields.io/badge/EN-English-blue?style=for-the-badge)](https://github.com/SamanthaSaavedra/Finalytics-Automated-Stock-Fundamental-Analysis-System/blob/main/README.MD)
 [![ES](https://img.shields.io/badge/ES-Español-red?style=for-the-badge)](https://github.com/SamanthaSaavedra/Finalytics-Automated-Stock-Fundamental-Analysis-System/blob/main/README.ES.MD)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![LinkedIn – Abstract](https://img.shields.io/badge/LinkedIn-Abstract-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/saidavaas_cucei-modularproject-rag-activity-7396305332035145728-jf5Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFk-tFcByN9PmpwrgCT9CH9fixMlf-nKTMM)
+[![LinkedIn – Methodology](https://img.shields.io/badge/LinkedIn-Methodology-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/saidavaas_finalytics-rag-docker-activity-7417207626096123905-OCS9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFk-tFcByN9PmpwrgCT9CH9fixMlf-nKTMM)
+
 
 <p align="justify">    
 Nowadays the <b>amount of knowledge and inference needed to understand investment has drastically increased</b>, when dealing with options to address heritage management the <b>stock market</b> could be one of multiple options to rely on, however the knowledge frontier is high and the amount of time unreachable.
@@ -12,7 +16,7 @@ Finalytics is a <b>financial analyzer for U.S. stock companies</b> that synthesi
 </p>
 
 <p align="justify">  
-Integrates <b>Model Controller View software architecture (MCV) with Docker</b> using the principles of microservices to isolate each component in a different container to provide more scalability for more users using cloud platforms.
+Integrates <b>Model View Controller software architecture (MVC) with Docker</b> using the principles of microservices to isolate each component in a different container to provide more scalability for more users using cloud platforms.
 </p>
 
 <p align="justify"> 
@@ -21,15 +25,15 @@ Each container has <b>QoS policies</b> in which Docker Compose tries within a ce
 
 https://github.com/user-attachments/assets/8e5069a7-8af9-40ab-8a22-db10eb866769
 
-## Software Architecture (MCV)
+## Software Architecture (MVC)
 
 <p align="justify">   
-The proposed architecture to intend the problem was using MCV (Model Control View) architecture in which they follow the next rules:
+The proposed architecture to intend the problem was using MVC (Model View Controller) architecture in which they follow the next rules:
 </p>
 
 - **Model:** Process the business logic and application.
-- **Controller:** Communicates the view and the controller, manages the input and updates the view and model.
 - **View:** Display the data from the model.
+- **Controller:** Communicates the view and the controller, manages the input and updates the view and model.
 
 ## Docker Segmentation (Microservices)
 
@@ -38,12 +42,12 @@ Docker helps to create isolated virtual environments to prevent problem dependen
 </p>
 
 <p align="justify">  
-Using the MCV architecture the containers were divided in the next approach:
+Using the MVC architecture the containers were divided in the next approach:
 </p>
 
 - **Model:** RAG and embed system (Hugging Face and Deepseek).
-- **Controller:** Database (MongoDB).
 - **View:** Flet.
+- **Controller:** Database (MongoDB).
 
 > [!NOTE]
 > The communication between containers is done using FastAPI and in a Docker bridge communication network this means is done locally and Docker itself integrates a DNS to solve the IP requests, the coordination between containers is archive by docker compose.

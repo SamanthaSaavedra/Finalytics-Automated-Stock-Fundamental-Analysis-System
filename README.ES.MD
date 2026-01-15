@@ -2,6 +2,9 @@
 
 [![EN](https://img.shields.io/badge/EN-English-blue?style=for-the-badge)](https://github.com/SamanthaSaavedra/Finalytics-Automated-Stock-Fundamental-Analysis-System/blob/main/README.MD)
 [![ES](https://img.shields.io/badge/ES-Español-red?style=for-the-badge)](https://github.com/SamanthaSaavedra/Finalytics-Automated-Stock-Fundamental-Analysis-System/blob/main/README.ES.MD)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![LinkedIn – Abstract](https://img.shields.io/badge/LinkedIn-Abstract-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/saidavaas_cucei-modularproject-rag-activity-7396305332035145728-jf5Z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFk-tFcByN9PmpwrgCT9CH9fixMlf-nKTMM)
+[![LinkedIn – Methodology](https://img.shields.io/badge/LinkedIn-Methodology-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/saidavaas_finalytics-rag-docker-activity-7417207626096123905-OCS9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFk-tFcByN9PmpwrgCT9CH9fixMlf-nKTMM)
 
 <p align="justify"> 
 En la actualidad la <b>cantidad de conocimiento e inferencia necesaria para entender la inversión ha aumentado drásticamente</b>, cuando se trata de opciones para abordar la gestión patrimonial el <b>mercado de valores</b> podría ser una de las múltiples alternativas, sin embargo, la frontera del conocimiento es alta y el tiempo disponible insuficiente. 
@@ -12,7 +15,7 @@ Finalytics es un <b>analizador financiero para empresas estadounidenses que coti
 </p>
 
 <p align="justify"> 
-Integra una <b>arquitectura de software Modelo Controlador Vista (MCV) con Docker</b> usando principios de microservicios para aislar cada componente en un contenedor distinto y brindar mayor escalabilidad para más usuarios en plataformas en la nube.
+Integra una <b>arquitectura de software Modelo Vista Controlador (MVC) con Docker</b> usando principios de microservicios para aislar cada componente en un contenedor distinto y brindar mayor escalabilidad para más usuarios en plataformas en la nube.
 </p>
 
 <p align="justify">
@@ -21,15 +24,15 @@ Cada contenedor posee <b>políticas de QoS</b> donde Docker Compose intenta, den
 
 https://github.com/user-attachments/assets/8e5069a7-8af9-40ab-8a22-db10eb866769
 
-## Arquitectura Software (MCV)
+## Arquitectura Software (MVC)
 
 <p align="justify"> 
-La arquitectura propuesta para abordar el problema utiliza MCV (Modelo Controlador Vista), en la cual se siguen las siguientes reglas:
+La arquitectura propuesta para abordar el problema utiliza MVC (Modelo Vista Controlador), en la cual se siguen las siguientes reglas:
 </p>
 
 - **Modelo:** Procesa la lógica del negocio y la aplicación.
-- **Controlador:** Comunica la vista y el modelo, gestiona la entrada y actualiza la vista y el modelo.
 - **Vista:** Muestra la información proveniente del modelo.
+- **Controlador:** Comunica la vista y el modelo, gestiona la entrada y actualiza la vista y el modelo.
 
 ## Docker Segmentación (Microservicios)
 
@@ -38,12 +41,12 @@ Docker ayuda a crear entornos virtuales aislados para evitar problemas de depend
 </p>
 
 <p align="justify">
-Utilizando la arquitectura MCV, los contenedores se dividieron de la siguiente manera:
+Utilizando la arquitectura MVC, los contenedores se dividieron de la siguiente manera:
 </p>
 
-- **Model:** Sistema RAG y embeddings (Hugging Face y Deepseek).
-- **Controller:** Base de datos (MongoDB).
-- **View:** Flet.
+- **Modelo:** Sistema RAG y embeddings (Hugging Face y Deepseek).
+- **Vista:** Flet.
+- **Controlador:** Base de datos (MongoDB).
 
 > [!NOTE]
 > La comunicación entre contenedores se realiza usando FastAPI y una red bridge de Docker, lo que significa que se ejecuta localmente y Docker integra un DNS para resolver solicitudes IP. La coordinación entre contenedores es lograda por Docker Compose.
